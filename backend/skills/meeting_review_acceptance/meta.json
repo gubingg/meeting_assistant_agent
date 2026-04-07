@@ -1,0 +1,27 @@
+﻿{
+  "name": "meeting_review_acceptance",
+  "display_name": "评审验收判定",
+  "description": "从评审或验收类会议内容中识别验收结论、遗留问题、上线条件，并补充相关关键结论与风险信息。",
+  "version": "1.0.0",
+  "enabled": true,
+  "triggers": [
+    "评审",
+    "验收",
+    "通过",
+    "不通过",
+    "条件通过",
+    "遗留问题",
+    "上线条件",
+    "发布",
+    "交付"
+  ],
+  "inputs": [
+    "meeting_transcript",
+    "planner_output"
+  ],
+  "outputs": [
+    "acceptance_review",
+    "key_conclusions",
+    "risks_blockers"
+  ]
+}

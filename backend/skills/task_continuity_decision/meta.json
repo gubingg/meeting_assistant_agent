@@ -1,0 +1,27 @@
+﻿{
+  "name": "task_continuity_decision",
+  "display_name": "任务延续判断",
+  "description": "结合当前会议待办与历史任务候选，判断任务是否延续、状态是否变化，以及负责人和截止时间是否发生更新。",
+  "version": "1.0.0",
+  "enabled": true,
+  "triggers": [
+    "继续推进",
+    "还没完成",
+    "卡住",
+    "依赖",
+    "负责人",
+    "截止时间",
+    "延期",
+    "完成",
+    "状态变化",
+    "待办"
+  ],
+  "inputs": [
+    "current_action_items",
+    "historical_task_candidates",
+    "planner_output"
+  ],
+  "outputs": [
+    "task_continuity_decisions"
+  ]
+}

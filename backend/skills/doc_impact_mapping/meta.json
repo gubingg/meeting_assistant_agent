@@ -1,0 +1,29 @@
+﻿{
+  "name": "doc_impact_mapping",
+  "display_name": "资料影响映射",
+  "description": "识别会议中对 PRD、技术方案、测试计划、参考资料等项目资料的影响，并生成版本更新与资料更新待办建议。",
+  "version": "1.0.0",
+  "enabled": true,
+  "triggers": [
+    "改需求",
+    "更新PRD",
+    "补文档",
+    "调整方案",
+    "更新技术方案",
+    "调整验收口径",
+    "更新测试计划",
+    "同步到文档",
+    "范围变化",
+    "资料变更"
+  ],
+  "inputs": [
+    "meeting_analysis",
+    "project_docs",
+    "existing_open_doc_update_tasks",
+    "planner_output"
+  ],
+  "outputs": [
+    "affected_docs",
+    "doc_update_task_suggestions"
+  ]
+}

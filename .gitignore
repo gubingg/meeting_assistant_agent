@@ -1,0 +1,30 @@
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.conda/
+
+# Local runtime and test artifacts
+backend/.pytest_runtime/
+backend/.pytest_runtime_debug/
+backend/.runtime_smoke/
+backend/.upload_smoke/
+backend/data/
+backend/backend/data/
+pytest-cache-files-*/
+
+# Environment files
+backend/.env
+
+# Frontend
+frontend-vue/node_modules/
+frontend-vue/dist/
+
+# IDE
+.idea/
+.vscode/
