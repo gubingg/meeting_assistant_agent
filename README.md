@@ -59,9 +59,12 @@
 
 ## 本地运行
 
+### 安装依赖
+
 ```powershell
 cd backend
 pip install -r requirements.txt
+
 cd frontend-vue
 npm install
 ```
@@ -99,14 +102,3 @@ npm run dev
   ]
 }
 ```
-
-### 项目资料上传
-
-当前支持的资料类型为：
-- `PRD`
-- `字段定义`
-- `技术方案`
-- `测试/验收`
-- `参考资料`
-- `其他`
-
